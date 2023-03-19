@@ -8,18 +8,26 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Movie_Database
+namespace Movie_Database.Forms
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            Application.Exit();
+        }
 
+        private void open_details(object sender, EventArgs e)
+        {
+            this.Hide();
+            UserDetails ud = new UserDetails();
+            ud.ParentForm = this;
+            ud.Show();
         }
     }
 }

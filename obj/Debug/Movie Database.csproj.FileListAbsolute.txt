@@ -8,3 +8,17 @@ D:\HomeWork\Informatika\ИТ кариера\module_7\Project\Movie Database\obj\
 D:\HomeWork\Informatika\ИТ кариера\module_7\Project\Movie Database\obj\Debug\Movie Database.csproj.CoreCompileInputs.cache
 D:\HomeWork\Informatika\ИТ кариера\module_7\Project\Movie Database\obj\Debug\Movie Database.exe
 D:\HomeWork\Informatika\ИТ кариера\module_7\Project\Movie Database\obj\Debug\Movie Database.pdb
+D:\HomeWork\Informatika\ИТ кариера\module_7\Project\Movie-Catalogue\bin\Debug\Movie Database.exe.config
+D:\HomeWork\Informatika\ИТ кариера\module_7\Project\Movie-Catalogue\bin\Debug\Movie Database.exe
+D:\HomeWork\Informatika\ИТ кариера\module_7\Project\Movie-Catalogue\bin\Debug\Movie Database.pdb
+D:\HomeWork\Informatika\ИТ кариера\module_7\Project\Movie-Catalogue\obj\Debug\Movie Database.csproj.AssemblyReference.cache
+D:\HomeWork\Informatika\ИТ кариера\module_7\Project\Movie-Catalogue\obj\Debug\Movie Database.csproj.SuggestedBindingRedirects.cache
+D:\HomeWork\Informatika\ИТ кариера\module_7\Project\Movie-Catalogue\obj\Debug\Movie_Database.Form1.resources
+D:\HomeWork\Informatika\ИТ кариера\module_7\Project\Movie-Catalogue\obj\Debug\Movie_Database.Properties.Resources.resources
+D:\HomeWork\Informatika\ИТ кариера\module_7\Project\Movie-Catalogue\obj\Debug\Movie_Database.Register.resources
+D:\HomeWork\Informatika\ИТ кариера\module_7\Project\Movie-Catalogue\obj\Debug\Movie Database.csproj.GenerateResource.cache
+D:\HomeWork\Informatika\ИТ кариера\module_7\Project\Movie-Catalogue\obj\Debug\Movie Database.csproj.CoreCompileInputs.cache
+D:\HomeWork\Informatika\ИТ кариера\module_7\Project\Movie-Catalogue\obj\Debug\Movie Database.exe
+D:\HomeWork\Informatika\ИТ кариера\module_7\Project\Movie-Catalogue\obj\Debug\Movie Database.pdb
+D:\HomeWork\Informatika\ИТ кариера\module_7\Project\Movie-Catalogue\obj\Debug\Movie_Database.Forms.MainForm.resources
+D:\HomeWork\Informatika\ИТ кариера\module_7\Project\Movie-Catalogue\obj\Debug\Movie_Database.Forms.UserDetails.resources

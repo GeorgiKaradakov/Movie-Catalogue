@@ -76,6 +76,7 @@
             this.loginButt.TabIndex = 4;
             this.loginButt.Text = "Login";
             this.loginButt.UseVisualStyleBackColor = true;
+            this.loginButt.Click += new System.EventHandler(this.LogIn);
             // 
             // reigster
             // 
@@ -86,6 +87,9 @@
             this.reigster.Size = new System.Drawing.Size(300, 20);
             this.reigster.TabIndex = 6;
             this.reigster.Text = "Don\'t have an account? Create one here!";
+            this.reigster.Click += new System.EventHandler(this.reigster_Click);
+            this.reigster.MouseLeave += new System.EventHandler(this.MouseLeave_lbl);
+            this.reigster.MouseHover += new System.EventHandler(this.Hover_lbl);
             // 
             // Form1
             // 
