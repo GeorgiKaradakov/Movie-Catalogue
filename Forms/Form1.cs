@@ -22,11 +22,6 @@ namespace Movie_Database
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void reigster_Click(object sender, EventArgs e)
         {
             Register reg_form = new Register();
@@ -42,11 +37,12 @@ namespace Movie_Database
             {
 
                 if (SQL_Utils.does_user_exists(usernameLog.Text, passwordLog.Text)) {
-                    SQL_Utils.ConfigureCurrentUser(usernameLog.Text);
+                    SQL_Utils.configure_current_user(usernameLog.Text);
 
                     this.Hide();
-                    new MainForm().Show();
-
+                    MainForm mf = new MainForm();
+                    mf.StartPosition = FormStartPosition.CenterScreen;
+                    mf.Show();
                 }
                 else
                 {

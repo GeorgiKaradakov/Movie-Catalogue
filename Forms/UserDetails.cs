@@ -24,6 +24,7 @@ namespace Movie_Database.Forms
         private void return_main(object sender, EventArgs e)
         {
             this.Close();
+            ParentForm.StartPosition = FormStartPosition.CenterScreen;
             ParentForm.Show();
         }
 

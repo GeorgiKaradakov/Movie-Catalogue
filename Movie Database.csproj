@@ -58,12 +58,19 @@
     <Compile Include="Forms\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Movies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Movies.Designer.cs">
+      <DependentUpon>Movies.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\UserDetails.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\UserDetails.Designer.cs">
       <DependentUpon>UserDetails.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\Movie.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -74,12 +81,16 @@
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
     <Compile Include="utils\BaseForm.cs" />
+    <Compile Include="utils\Movie_Poster_Container.cs" />
     <Compile Include="utils\SQL_Utils.cs" />
     <EmbeddedResource Include="Forms\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Movies.resx">
+      <DependentUpon>Movies.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\UserDetails.resx">
       <DependentUpon>UserDetails.cs</DependentUpon>
@@ -92,6 +103,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Forms\Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
@@ -108,6 +120,66 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Fight_Club.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Forest_Gump.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Inception.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Interstellar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Jurassic_Park.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Pulp_Fiction.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Star_Wars.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\The Matrix.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\The_Dark_Knight.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\The_Departed.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\The_Exorcist.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\the_godfather.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\The_Godfather_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\The_Green_Mile.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\The_Lion_King.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\The_Lord_of_the_Rings.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\The_Shawshank_Redemption.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\The_Silence_of_the_Lambs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\The_Social_Network.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Gone_with_the_Wind.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

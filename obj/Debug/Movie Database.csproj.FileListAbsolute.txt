@@ -22,3 +22,4 @@ D:\HomeWork\Informatika\ИТ кариера\module_7\Project\Movie-Catalogue\obj
 D:\HomeWork\Informatika\ИТ кариера\module_7\Project\Movie-Catalogue\obj\Debug\Movie Database.pdb
 D:\HomeWork\Informatika\ИТ кариера\module_7\Project\Movie-Catalogue\obj\Debug\Movie_Database.Forms.MainForm.resources
 D:\HomeWork\Informatika\ИТ кариера\module_7\Project\Movie-Catalogue\obj\Debug\Movie_Database.Forms.UserDetails.resources
+D:\HomeWork\Informatika\ИТ кариера\module_7\Project\Movie-Catalogue\obj\Debug\Movie_Database.Forms.Movies.resources

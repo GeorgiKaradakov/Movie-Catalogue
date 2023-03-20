@@ -50,6 +50,7 @@ namespace Movie_Database
 
         private void return_to_login(object sender, EventArgs e)
         {
+            this.ParentForm.StartPosition = FormStartPosition.CenterScreen;
             this.ParentForm.Show();
             this.Close();
         }

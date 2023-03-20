@@ -40,7 +40,7 @@ namespace Movie_Database
             }
         }
 
-        public static void ConfigureCurrentUser(string username)
+        public static void configure_current_user(string username)
         {
             User _out = null;
 
@@ -65,6 +65,34 @@ namespace Movie_Database
                         );
                 }
             }
+        }
+
+        public static List<Movie> get_all_movies()
+        {
+            List<Movie> movies = new List<Movie>();
+
+            using(SqlConnection connection = new SqlConnection(connection_string))
+            {
+                string query = "SELECT * FROM movies;";
+
+                SqlCommand command = new SqlCommand(query, connection);
+                connection.Open();
+
+                SqlDataReader reader = command.ExecuteReader();
+
+                while(reader.Read()) {
+                    movies.Add(new Movie(
+                            int.Parse(reader["id"].ToString()),
+                            reader["title"].ToString(),
+                            reader["director"].ToString(),
+                            reader["year_of_release"].ToString(),
+                            reader["genre"].ToString(),
+                            reader["summary"].ToString()
+                        ));
+                }
+            }
+
+            return movies;
         }
     }
 }
