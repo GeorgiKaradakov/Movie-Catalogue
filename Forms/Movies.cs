@@ -81,7 +81,7 @@ namespace Movie_Database.Forms
             }
 
             Button @return = new Button();
-            @return.Size = new Size(120, 33);
+            @return.Size = new Size(160, 33);
             @return.Font = new Font("Microsoft Sans Serif", 12);
             @return.Location = new Point(this.ClientSize.Width / 2 - @return.Width / 2, 6126 + 20);
             @return.Click += new EventHandler(return_main_form);
