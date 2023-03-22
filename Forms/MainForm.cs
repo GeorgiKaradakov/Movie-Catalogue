@@ -24,27 +24,27 @@ namespace Movie_Database.Forms
             Application.Exit();
         }
 
-        private void open_details(object sender, EventArgs e)
-        {
-            this.Hide();
-            UserDetails ud = new UserDetails();
-            ud.ParentForm = this;
-            ud.StartPosition = FormStartPosition.CenterScreen;
-            ud.Show();
-        }
-
-        private void open_movie_form(object sender, EventArgs e)
-        {
-            Movies movies_f = new Movies();
-            movies_f.ParentForm = this;
-            movies_f.StartPosition = FormStartPosition.CenterScreen;
-            this.Hide();
-            movies_f.Show();
-        }
-
         private void MainForm_Load(object sender, EventArgs e)
         {
             Movie_Poster_Container.movies = SQL_Utils.get_all_movies();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            UserDetails ud = new UserDetails();
+            ud.ParentForm = this;
+            ud.StartPosition = FormStartPosition.CenterScreen;
+            this.Hide();
+            ud.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Movie_main mm = new Movie_main();
+            mm.ParentForm = this;
+            mm.StartPosition = FormStartPosition.CenterScreen;
+            this.Hide();
+            mm.Show();
         }
     }
 }

@@ -38,7 +38,6 @@ namespace Movie_Database
 
                 if (SQL_Utils.does_user_exists(usernameLog.Text, passwordLog.Text)) {
                     SQL_Utils.configure_current_user(usernameLog.Text);
-
                     this.Hide();
                     MainForm mf = new MainForm();
                     mf.StartPosition = FormStartPosition.CenterScreen;

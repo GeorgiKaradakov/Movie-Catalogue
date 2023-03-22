@@ -28,14 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.filter = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
+            // 
+            // filter
+            // 
+            this.filter.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.filter.FormattingEnabled = true;
+            this.filter.Items.AddRange(new object[] {
+            "filter by",
+            "filter by year_of_release",
+            "filter by title",
+            "filter by genre"});
+            this.filter.Location = new System.Drawing.Point(12, 12);
+            this.filter.Name = "filter";
+            this.filter.Size = new System.Drawing.Size(164, 32);
+            this.filter.TabIndex = 0;
+            this.filter.Text = "Filter by";
+            this.filter.TextChanged += new System.EventHandler(this.filter_func);
             // 
             // Movies
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(816, 450);
+            this.ClientSize = new System.Drawing.Size(826, 450);
+            this.Controls.Add(this.filter);
             this.Name = "Movies";
             this.Text = "Movies";
             this.Load += new System.EventHandler(this.Movies_Load);
@@ -44,5 +62,7 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.ComboBox filter;
     }
 }

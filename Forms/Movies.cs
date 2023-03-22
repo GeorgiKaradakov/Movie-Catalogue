@@ -1,4 +1,5 @@
-﻿using Movie_Database.utils;
+﻿using Movie_Database.Models;
+using Movie_Database.utils;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -22,17 +23,70 @@ namespace Movie_Database.Forms
 
         private void Movies_Load(object sender, EventArgs e)
         {
-            var movies = Movie_Poster_Container.movies;
+            generate_movies(Movie_Poster_Container.movies);
+        }
 
+        private void return_main_form(object sender, EventArgs e)
+        {
+            this.ParentForm.StartPosition = FormStartPosition.CenterScreen;
+            this.Close();
+            this.ParentForm.Show();
+        }
+
+        private void filter_func(object sender, EventArgs e)
+        {
+
+
+            for (int i = 0; i < this.Controls.Count; i++)
+            {
+                if (this.Controls[i].GetType().Name == "ComboBox")
+                {
+                    continue;
+                }
+
+                this.Controls.Remove(this.Controls[i]);
+                i--;
+            }
+
+            var splitted_filter = filter.Text.Split(' ').ToArray();
+
+            if(splitted_filter.Length > 2)
+            {
+                generate_movies(
+                        SQL_Utils.get_all_movies(true, splitted_filter[2])
+                );
+            }
+            else
+            {
+                generate_movies(Movie_Poster_Container.movies);
+            }
+        }
+
+        private void generate_return_btn()
+        {
+            Button @return = new Button();
+            @return.Size = new Size(180, 33);
+            @return.Font = new Font("Microsoft Sans Serif", 12);
+            @return.Location = new Point(this.ClientSize.Width / 2 - @return.Width / 2, 6126 + 20);
+            @return.Click += new EventHandler(return_main_form);
+            @return.Text = "Return to movies form";
+            @return.TabStop = false;
+
+            this.Controls.Add(@return);
+        }
+
+        private void generate_movies(List<Movie> movies)
+        {
             PictureBox prev = new PictureBox();
             Label text_prev = new Label();
             Label line_prev = new Label();
-            foreach(var movie in movies)
+            bool first = true;
+            foreach (var movie in movies)
             {
                 PictureBox icon = new PictureBox();
                 icon.SizeMode = PictureBoxSizeMode.StretchImage;
                 icon.Size = new Size(168, 235);
-                if (movie.Id == 1)
+                if (first)
                 {
                     icon.Location = new Point(49, 59);
                 }
@@ -43,11 +97,11 @@ namespace Movie_Database.Forms
                 icon.Image = Movie_Poster_Container.Posters[movie.Id - 1];
 
                 Label text = new Label();
-                text.Font = new Font("Microsoft Sans Serif", 12);
+                text.Font = new Font("Microsoft Sans Serif", 12, FontStyle.Bold);
                 text.TextAlign = ContentAlignment.TopLeft;
                 text.AutoSize = false;
                 text.Size = new Size(567, 235);
-                if (movie.Id == 1)
+                if (first)
                 {
                     text.Location = new Point(233, 69);
                 }
@@ -61,7 +115,7 @@ namespace Movie_Database.Forms
                 Label line = new Label();
                 line.AutoSize = false;
                 line.Size = new Size(713, 10);
-                if(movie.Id == 1)
+                if (first)
                 {
                     line.Location = new Point(46, 331);
                 }
@@ -78,24 +132,11 @@ namespace Movie_Database.Forms
                 prev = icon;
                 line_prev = line;
                 text_prev = text;
+
+                first = false;
             }
 
-            Button @return = new Button();
-            @return.Size = new Size(160, 33);
-            @return.Font = new Font("Microsoft Sans Serif", 12);
-            @return.Location = new Point(this.ClientSize.Width / 2 - @return.Width / 2, 6126 + 20);
-            @return.Click += new EventHandler(return_main_form);
-            @return.Text = "Return to main form";
-            @return.TabStop = false;
-
-            this.Controls.Add(@return);
-        }
-
-        private void return_main_form(object sender, EventArgs e)
-        {
-            this.ParentForm.StartPosition = FormStartPosition.CenterScreen;
-            this.Close();
-            this.ParentForm.Show();
+            generate_return_btn();
         }
     }
 }

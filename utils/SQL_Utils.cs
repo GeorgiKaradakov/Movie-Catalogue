@@ -67,13 +67,18 @@ namespace Movie_Database
             }
         }
 
-        public static List<Movie> get_all_movies()
+        public static List<Movie> get_all_movies(bool filter = false, string filter_str = "")
         {
             List<Movie> movies = new List<Movie>();
 
             using(SqlConnection connection = new SqlConnection(connection_string))
             {
-                string query = "SELECT * FROM movies;";
+                string query = "SELECT * FROM movies";
+
+                if (filter)
+                {
+                    query += $" ORDER BY {filter_str};";
+                }
 
                 SqlCommand command = new SqlCommand(query, connection);
                 connection.Open();
@@ -93,6 +98,29 @@ namespace Movie_Database
             }
 
             return movies;
+        }
+
+        public static List<string> get_actors_names(int movie_id)
+        {
+            List<string> actors_names = new List<string>();
+
+            using(SqlConnection connection = new SqlConnection(connection_string))
+            {
+                string query = $"SELECT a.first_name, a.last_name FROM actors AS a WHERE a.movie_id = {movie_id};";
+
+                SqlCommand command = new SqlCommand(query, connection);
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+
+                while(reader.Read())
+                {
+                    actors_names.Add(
+                            string.Concat(reader["first_name"].ToString(), " ", reader["last_name"].ToString())
+                        );
+                }
+            }
+
+            return actors_names;
         }
     }
 }

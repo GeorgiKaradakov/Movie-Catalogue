@@ -118,50 +118,32 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Interstellar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\Interstellar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="The_Godfather_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\The_Godfather_2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Jurassic_Park" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\Jurassic_Park.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="The Matrix" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\The Matrix.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Fight_Club" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Fight_Club.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Forest_Gump" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\Forest_Gump.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="The_Social_Network" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\The_Social_Network.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Star_Wars" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\Star_Wars.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Gone_with_the_Wind" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Gone_with_the_Wind.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Inception" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\Inception.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="The_Lion_King" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\The_Lion_King.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Interstellar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Interstellar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="The_Lord_of_the_Rings" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\The_Lord_of_the_Rings.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="The_Silence_of_the_Lambs" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\The_Silence_of_the_Lambs.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="The_Exorcist" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\The_Exorcist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="The_Shawshank_Redemption" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\The_Shawshank_Redemption.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Jurassic_Park" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Jurassic_Park.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Pulp_Fiction" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\Pulp_Fiction.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="the_godfather" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\the_godfather.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Star_Wars" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Star_Wars.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="The Matrix" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\The Matrix.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="The_Dark_Knight" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\The_Dark_Knight.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -169,13 +151,31 @@
   <data name="The_Departed" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\The_Departed.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="The_Exorcist" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\The_Exorcist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="the_godfather" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\the_godfather.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="The_Godfather_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\The_Godfather_2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="The_Green_Mile" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Assets\The_Green_Mile.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Fight_Club" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\Fight_Club.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="The_Lion_King" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\The_Lion_King.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Gone_with_the_Wind" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\Gone_with_the_Wind.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="The_Lord_of_the_Rings" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\The_Lord_of_the_Rings.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="The_Shawshank_Redemption" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\The_Shawshank_Redemption.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="The_Silence_of_the_Lambs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\The_Silence_of_the_Lambs.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="The_Social_Network" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\The_Social_Network.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -33,6 +33,7 @@ namespace Movie_Database.utils
             Properties.Resources.The_Green_Mile
         };
 
-        public static List<Movie> movies { get; set; }
+        private static List<Movie> _movies = new List<Movie>();
+        public static List<Movie> movies { get => _movies; set { _movies = value; } }
     }
 }

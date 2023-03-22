@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\Actors_main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Actors_main.Designer.cs">
+      <DependentUpon>Actors_main.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,12 +70,25 @@
     <Compile Include="Forms\Movies.Designer.cs">
       <DependentUpon>Movies.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Movie_main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Movie_main.Designer.cs">
+      <DependentUpon>Movie_main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Search_Movies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Search_Movies.Designer.cs">
+      <DependentUpon>Search_Movies.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\UserDetails.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\UserDetails.Designer.cs">
       <DependentUpon>UserDetails.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\actor.cs" />
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Program.cs" />
@@ -83,6 +102,7 @@
     <Compile Include="utils\BaseForm.cs" />
     <Compile Include="utils\Movie_Poster_Container.cs" />
     <Compile Include="utils\SQL_Utils.cs" />
+    <Compile Include="utils\Utils.cs" />
     <EmbeddedResource Include="Forms\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -91,6 +111,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Movies.resx">
       <DependentUpon>Movies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Movie_main.resx">
+      <DependentUpon>Movie_main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Search_Movies.resx">
+      <DependentUpon>Search_Movies.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\UserDetails.resx">
       <DependentUpon>UserDetails.cs</DependentUpon>
