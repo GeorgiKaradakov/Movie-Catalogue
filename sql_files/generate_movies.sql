@@ -36,7 +36,7 @@ VALUES (6, 'Forrest Gump', 'Robert Zemeckis', '1994', 'Drama, Romance', 'The pre
 INSERT INTO movies (id, title, director, year_of_release, genre, summary)
 VALUES (7, 'Fight Club', 'David Fincher', '1999', 'Drama', 'An insomniac office worker and a devil-may-care soapmaker form an underground fight club that evolves into something much, much more.');
 INSERT INTO movies (id, title, director, year_of_release, genre, summary)
-VALUES (8, 'Star Wars: Episode IV - A New Hope', 'George Lucas', '1977', 'Action, Adventure, Fantasy', 'Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a Wookiee and two droids to save the galaxy from the Empire's world-destroying battle station, while also attempting to rescue Princess Leia from the mysterious Darth Vader.');
+VALUES (8, 'Star Wars: Episode IV - A New Hope', 'George Lucas', '1977', 'Action, Adventure, Fantasy', 'Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a Wookiee and two droids to save the galaxy from the Empires world-destroying battle station, while also attempting to rescue Princess Leia from the mysterious Darth Vader.');
 INSERT INTO movies (id, title, director, year_of_release, genre, summary)
 VALUES (9, 'Inception', 'Christopher Nolan', '2010', 'Action, Adventure, Sci-Fi', 'A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.');
 INSERT INTO movies (id, title, director, year_of_release, genre, summary)
@@ -48,11 +48,11 @@ VALUES (12, 'The Departed', 'Martin Scorsese', '2006', 'Crime, Drama, Thriller',
 INSERT INTO movies (id, title, director, year_of_release, genre, summary)
 VALUES (13, 'The Social Network', 'David Fincher', '2010', 'Biography, Drama', 'Harvard student Mark Zuckerberg creates the social networking site that would become known as Facebook, but is later sued by two brothers who claimed he stole their idea, and the co-founder who was later squeezed out of the business.');
 INSERT INTO movies (id, title, director, year_of_release, genre, summary)
-VALUES (14, 'Interstellar', 'Christopher Nolan', '2014', 'Adventure, Drama, Sci-Fi', 'A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.');
+VALUES (14, 'Interstellar', 'Christopher Nolan', '2014', 'Adventure, Drama, Sci-Fi', 'A team of explorers travel through a wormhole in space in an attempt to ensure humanitys survival.');
 INSERT INTO movies (id, title, director, year_of_release, genre, summary)
 VALUES (15, 'The Lion King', 'Roger Allers, Rob Minkoff', '1994', 'Animation, Adventure, Drama', 'Lion prince Simba and his father are targeted by his bitter uncle, who wants to ascend the throne himself.');
 INSERT INTO movies (id, title, director, year_of_release, genre, summary)
-VALUES (16, 'Jurassic Park', 'Steven Spielberg', '1993', 'Adventure, Sci-Fi, Thriller', 'A pragmatic paleontologist visiting an almost complete theme park is tasked with protecting a couple of kids after a power failure causes the park's cloned dinosaurs to run loose.');
+VALUES (16, 'Jurassic Park', 'Steven Spielberg', '1993', 'Adventure, Sci-Fi, Thriller', 'A pragmatic paleontologist visiting an almost complete theme park is tasked with protecting a couple of kids after a power failure causes the parks cloned dinosaurs to run loose.');
 INSERT INTO movies (id, title, director, year_of_release, genre, summary)
 VALUES (17, 'The Exorcist', 'William Friedkin', '1973', 'Horror', 'When a teenage girl is possessed by a mysterious entity, her mother seeks the help of two priests to save her daughter.');
 INSERT INTO movies (id, title, director, year_of_release, genre, summary)

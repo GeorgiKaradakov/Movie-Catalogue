@@ -23,7 +23,7 @@ namespace Movie_Database.Forms
 
         private void Movies_Load(object sender, EventArgs e)
         {
-            generate_movies(Movie_Poster_Container.movies);
+            generate_movies(utils.Data_Container.movies);
         }
 
         private void return_main_form(object sender, EventArgs e)
@@ -58,7 +58,7 @@ namespace Movie_Database.Forms
             }
             else
             {
-                generate_movies(Movie_Poster_Container.movies);
+                generate_movies(utils.Data_Container.movies);
             }
         }
 
@@ -94,7 +94,7 @@ namespace Movie_Database.Forms
                 {
                     icon.Location = new Point(prev.Location.X, line_prev.Location.Y + line_prev.Height + 30);
                 }
-                icon.Image = Movie_Poster_Container.Posters[movie.Id - 1];
+                icon.Image = utils.Data_Container.Posters[movie.Id - 1];
 
                 Label text = new Label();
                 text.Font = new Font("Microsoft Sans Serif", 12, FontStyle.Bold);

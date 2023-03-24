@@ -43,5 +43,14 @@ namespace Movie_Database.Forms
             this.Hide();
             sm.Show();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Movie_Search_Cast msc = new Movie_Search_Cast();
+            msc.ParentForm = this;
+            msc.StartPosition = FormStartPosition.CenterScreen;
+            this.Hide();
+            msc.Show();
+        }
     }
 }

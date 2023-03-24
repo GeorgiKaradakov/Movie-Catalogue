@@ -1,12 +1,15 @@
 ﻿using Movie_Database.Models;
+using Movie_Database.utils;
 using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Common;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Movie_Database
 {
@@ -121,6 +124,39 @@ namespace Movie_Database
             }
 
             return actors_names;
+        }
+
+        public static List<actor> get_cast(string title)
+        {
+            if(!Data_Container.movies.Any(x => Utils.compare_movies_names(x.Title, title)))
+            {
+                return null;
+            }
+
+            List<actor> actors = new List<actor>();
+
+            using(SqlConnection connection = new SqlConnection(connection_string))
+            {
+                string query = $"SELECT a.id, ai.name, ai.birthdate, a.place_of_birth, ai.bio FROM movies as m left join actors as a on m.id = a.movie_id left join actors_info as ai on ai.id = a.id where m.title = '{title}';"; 
+                connection.Open();
+                SqlCommand command = new SqlCommand (query, connection);
+
+                SqlDataReader reader = command.ExecuteReader();
+
+                while(reader.Read()) {
+                    actors.Add(
+                            new actor(
+                                int.Parse(reader["id"].ToString()),
+                                reader["name"].ToString(),
+                                reader["birthdate"].ToString(),
+                                reader["place_of_birth"].ToString(),
+                                reader["bio"].ToString()
+                            )
+                        );
+                }
+            }
+
+            return actors;
         }
     }
 }

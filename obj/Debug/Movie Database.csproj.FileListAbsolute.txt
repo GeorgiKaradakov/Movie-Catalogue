@@ -20,8 +20,9 @@ D:\HomeWork\Informatika\ИТ кариера\module_7\Project\Movie-Catalogue\obj
 D:\HomeWork\Informatika\ИТ кариера\module_7\Project\Movie-Catalogue\obj\Debug\Movie Database.csproj.CoreCompileInputs.cache
 D:\HomeWork\Informatika\ИТ кариера\module_7\Project\Movie-Catalogue\obj\Debug\Movie Database.exe
 D:\HomeWork\Informatika\ИТ кариера\module_7\Project\Movie-Catalogue\obj\Debug\Movie Database.pdb
-D:\HomeWork\Informatika\ИТ кариера\module_7\Project\Movie-Catalogue\obj\Debug\Movie_Database.Forms.MainForm.resources
-D:\HomeWork\Informatika\ИТ кариера\module_7\Project\Movie-Catalogue\obj\Debug\Movie_Database.Forms.UserDetails.resources
 D:\HomeWork\Informatika\ИТ кариера\module_7\Project\Movie-Catalogue\obj\Debug\Movie_Database.Forms.Movies.resources
 D:\HomeWork\Informatika\ИТ кариера\module_7\Project\Movie-Catalogue\obj\Debug\Movie_Database.Forms.Movie_main.resources
 D:\HomeWork\Informatika\ИТ кариера\module_7\Project\Movie-Catalogue\obj\Debug\Movie_Database.Forms.Search_Movies.resources
+D:\HomeWork\Informatika\ИТ кариера\module_7\Project\Movie-Catalogue\obj\Debug\Movie_Database.Forms.Main_Form.resources
+D:\HomeWork\Informatika\ИТ кариера\module_7\Project\Movie-Catalogue\obj\Debug\Movie_Database.Forms.User_Details.resources
+D:\HomeWork\Informatika\ИТ кариера\module_7\Project\Movie-Catalogue\obj\Debug\Movie_Database.Forms.Movie_Search_Cast.resources

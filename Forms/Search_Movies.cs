@@ -46,7 +46,7 @@ namespace Movie_Database.Forms
             poster.Size = new Size(168, 235);
             poster.Location = new Point(49, 59);
             poster.SizeMode = PictureBoxSizeMode.StretchImage;
-            poster.Image = Movie_Poster_Container.Posters[movie.Id - 1];
+            poster.Image = utils.Data_Container.Posters[movie.Id - 1];
 
             text = new Label();
             text.Font = new Font("Microsoft Sans Serif", 12, FontStyle.Bold);
@@ -70,7 +70,7 @@ namespace Movie_Database.Forms
 
         private Movie find_movie(string title)
         {
-            var movies = Movie_Poster_Container.movies;
+            var movies = Data_Container.movies;
 
             if (!movies.Any(x => Utils.compare_movies_names(title, x.Title))) return null;
 

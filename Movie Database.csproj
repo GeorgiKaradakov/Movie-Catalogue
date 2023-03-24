@@ -58,11 +58,11 @@
     <Compile Include="Forms\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\MainForm.cs">
+    <Compile Include="Forms\Main_Form.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\MainForm.Designer.cs">
-      <DependentUpon>MainForm.cs</DependentUpon>
+    <Compile Include="Forms\Main_Form.Designer.cs">
+      <DependentUpon>Main_Form.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Movies.cs">
       <SubType>Form</SubType>
@@ -76,17 +76,23 @@
     <Compile Include="Forms\Movie_main.Designer.cs">
       <DependentUpon>Movie_main.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Movie_Search_Cast.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Movie_Search_Cast.Designer.cs">
+      <DependentUpon>Movie_Search_Cast.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Search_Movies.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Search_Movies.Designer.cs">
       <DependentUpon>Search_Movies.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\UserDetails.cs">
+    <Compile Include="Forms\User_Details.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\UserDetails.Designer.cs">
-      <DependentUpon>UserDetails.cs</DependentUpon>
+    <Compile Include="Forms\User_Details.Designer.cs">
+      <DependentUpon>User_Details.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\actor.cs" />
     <Compile Include="Models\Movie.cs" />
@@ -99,15 +105,20 @@
     <Compile Include="Forms\Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="utils\BaseForm.cs" />
-    <Compile Include="utils\Movie_Poster_Container.cs" />
+    <Compile Include="utils\Data_Container.cs" />
     <Compile Include="utils\SQL_Utils.cs" />
     <Compile Include="utils\Utils.cs" />
     <EmbeddedResource Include="Forms\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\MainForm.resx">
-      <DependentUpon>MainForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Main_Form.resx">
+      <DependentUpon>Main_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Movies.resx">
       <DependentUpon>Movies.cs</DependentUpon>
@@ -115,22 +126,20 @@
     <EmbeddedResource Include="Forms\Movie_main.resx">
       <DependentUpon>Movie_main.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Movie_Search_Cast.resx">
+      <DependentUpon>Movie_Search_Cast.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Search_Movies.resx">
       <DependentUpon>Search_Movies.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\UserDetails.resx">
-      <DependentUpon>UserDetails.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\User_Details.resx">
+      <DependentUpon>User_Details.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="Forms\Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
     </EmbeddedResource>
@@ -148,64 +157,229 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Fight_Club.jpg" />
+    <None Include="Assets\Movies\Fight_Club.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Forest_Gump.jpg" />
+    <None Include="Assets\Movies\Forest_Gump.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Inception.jpg" />
+    <None Include="Assets\Movies\Gone_with_the_Wind.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Interstellar.png" />
+    <None Include="Assets\Movies\Inception.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Jurassic_Park.jpg" />
+    <None Include="Assets\Movies\Interstellar.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Pulp_Fiction.jpg" />
+    <None Include="Assets\Movies\Jurassic_Park.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Star_Wars.jpg" />
+    <None Include="Assets\Movies\Pulp_Fiction.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\The Matrix.jpg" />
+    <None Include="Assets\Movies\Star_Wars.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\The_Dark_Knight.jpg" />
+    <None Include="Assets\Movies\The Matrix.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\The_Departed.jpg" />
+    <None Include="Assets\Movies\The_Dark_Knight.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\The_Exorcist.jpg" />
+    <None Include="Assets\Movies\The_Departed.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\the_godfather.jpg" />
+    <None Include="Assets\Movies\The_Exorcist.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\The_Godfather_2.jpg" />
+    <None Include="Assets\Movies\the_godfather.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\The_Green_Mile.jpeg" />
+    <None Include="Assets\Movies\The_Godfather_2.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\The_Lion_King.jpg" />
+    <None Include="Assets\Movies\The_Green_Mile.jpeg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\The_Lord_of_the_Rings.jpg" />
+    <None Include="Assets\Movies\The_Lion_King.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\The_Shawshank_Redemption.jpg" />
+    <None Include="Assets\Movies\The_Lord_of_the_Rings.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\The_Silence_of_the_Lambs.jpg" />
+    <None Include="Assets\Movies\The_Shawshank_Redemption.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\The_Social_Network.jpg" />
+    <None Include="Assets\Movies\The_Silence_of_the_Lambs.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Gone_with_the_Wind.jpg" />
+    <None Include="Assets\Movies\The_Social_Network.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Actors\Aaron_Eckhart.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Actors\Al Pacino.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Actors\Andrew Garfield.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Actors\Anne Hathaway.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Actors\Anthony Hopkins.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Actors\Armie Hammer.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Actors\Bob Gunton.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Actors\Brad Pitt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Actors\Carrie Fisher.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Actors\Carrie-Anne Moss.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Actors\Christian Bale.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Actors\clark_gable.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Actors\David Morse.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Actors\Edward Norton.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Actors\Elijah Wood.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Actors\Ellen Burstyn.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Actors\ellen page.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Actors\Gary Sinise.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Actors\Harrison Ford.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Actors\heath ledger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Actors\helena carter.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Actors\Ian McKellen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Actors\Jack Nicholson.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Actors\james caan.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Actors\James Earl Jones.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Actors\Jason Miller.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Actors\Jedd Goldblum.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Actors\Jeremy Irons.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Actors\Jesse Eisenberg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Actors\Jessica Chastain.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Actors\Jodie Foster.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Actors\John Travolta.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Actors\joseph levitt.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Actors\Keanu Reeves.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Actors\Laura Dern.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Actors\Laurence Fishburne.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Actors\Leonardo DiCaprio.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Actors\Mark Hamill.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Actors\marlon brandon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Actors\mathew macconaughey.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Actors\Matt Damon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Actors\Matthew Broderick.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Actors\max von sydow.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Actors\Michael Clarke Duncan.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Actors\Morgan Freeman.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Actors\Olivia de Havilland.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Actors\robin wright.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Actors\sam neil.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Actors\Samuel L. Jackson.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Actors\ted levine.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Actors\tim robbins.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Actors\Tom Hanks.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Actors\Uma Thurman.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Actors\viggo mortensen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Actors\Vivien Leigh.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

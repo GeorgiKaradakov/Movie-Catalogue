@@ -8,6 +8,8 @@ namespace Movie_Database.Models
 {
     public class Movie
     {
+        public static int COUNT_OF_SYMBOLS_PER_LINE = 52;
+
         public int Id { get; set; }
         public string Title { get; set; }   
         public string Director { get; set; }
@@ -25,8 +27,25 @@ namespace Movie_Database.Models
             this.Summary = summary;
         }
 
+        public Movie(int id, string title, string director, string date, string genre) {
+            this.Id = id;
+            this.Title = title;
+            this.Director = director;
+            this.Date = date;
+            this.Genre = genre;
+            this.Summary = string.Empty;
+        }
+
         public override string ToString()
         {
+            if (this.Summary == "None")
+            {
+                return $"{this.Id}. {this.Title} ({this.Date})\n" +
+                       $"Director: {this.Director}\n" +
+                       $"   Genre: {this.Genre}\n\n" +
+                       $"There is no given information for the movie";
+            }
+
             string summary = "";
             bool is_time = false;
             int count = 0;
@@ -34,7 +53,7 @@ namespace Movie_Database.Models
             {
                 summary += this.Summary[i];
 
-                if (count == 52) is_time = true;
+                if (count == COUNT_OF_SYMBOLS_PER_LINE) is_time = true;
 
                 if(is_time && this.Summary[i] == ' ')
                 {

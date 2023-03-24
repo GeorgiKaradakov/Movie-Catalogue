@@ -118,64 +118,229 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Aaron_Eckhart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Actors\Aaron_Eckhart.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Al_Pacino" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Actors\Al Pacino.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Andrew_Garfield" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Actors\Andrew Garfield.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Anne_Hathaway" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Actors\Anne Hathaway.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Anthony_Hopkins" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Actors\Anthony Hopkins.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Armie_Hammer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Actors\Armie Hammer.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bob_Gunton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Actors\Bob Gunton.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Brad_Pitt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Actors\Brad Pitt.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Carrie_Anne_Moss" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Actors\Carrie-Anne Moss.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Carrie_Fisher" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Actors\Carrie Fisher.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Christian_Bale" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Actors\Christian Bale.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="clark_gable1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Actors\clark_gable.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="David_Morse" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Actors\David Morse.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Edward_Norton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Actors\Edward Norton.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Elijah_Wood" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Actors\Elijah Wood.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ellen_Burstyn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Actors\Ellen Burstyn.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ellen_page" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Actors\ellen page.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Fight_Club" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\Fight_Club.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Assets\Movies\Fight_Club.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Forest_Gump" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\Forest_Gump.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Assets\Movies\Forest_Gump.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Gary_Sinise" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Actors\Gary Sinise.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Gone_with_the_Wind" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\Gone_with_the_Wind.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Assets\Movies\Gone_with_the_Wind.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Harrison_Ford" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Actors\Harrison Ford.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="heath_ledger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Actors\heath ledger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="helena_carter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Actors\helena carter.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ian_McKellen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Actors\Ian McKellen.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Inception" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\Inception.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Assets\Movies\Inception.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Interstellar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\Interstellar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Assets\Movies\Interstellar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Jack_Nicholson" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Actors\Jack Nicholson.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="james_caan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Actors\james caan.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="James_Earl_Jones" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Actors\James Earl Jones.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Jason_Miller" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Actors\Jason Miller.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Jedd_Goldblum" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Actors\Jedd Goldblum.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Jeremy_Irons" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Actors\Jeremy Irons.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Jesse_Eisenberg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Actors\Jesse Eisenberg.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Jessica_Chastain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Actors\Jessica Chastain.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Jodie_Foster" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Actors\Jodie Foster.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="John_Travolta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Actors\John Travolta.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="joseph_levitt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Actors\joseph levitt.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Jurassic_Park" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\Jurassic_Park.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Assets\Movies\Jurassic_Park.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Keanu_Reeves" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Actors\Keanu Reeves.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Laura_Dern" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Actors\Laura Dern.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Laurence_Fishburne" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Actors\Laurence Fishburne.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Leonardo_DiCaprio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Actors\Leonardo DiCaprio.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mark_Hamill" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Actors\Mark Hamill.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="marlon_brandon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Actors\marlon brandon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mathew_macconaughey" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Actors\mathew macconaughey.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Matthew_Broderick" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Actors\Matthew Broderick.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Matt_Damon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Actors\Matt Damon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="max_von_sydow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Actors\max von sydow.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Michael_Clarke_Duncan" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Actors\Michael Clarke Duncan.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Morgan_Freeman" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Actors\Morgan Freeman.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Olivia_de_Havilland" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Actors\Olivia de Havilland.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Pulp_Fiction" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\Pulp_Fiction.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Assets\Movies\Pulp_Fiction.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="robin_wright" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Actors\robin wright.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Samuel_L__Jackson" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Actors\Samuel L. Jackson.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sam_neil" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Actors\sam neil.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Star_Wars" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\Star_Wars.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Assets\Movies\Star_Wars.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ted_levine" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Actors\ted levine.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="The Matrix" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\The Matrix.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Assets\Movies\The Matrix.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="The_Dark_Knight" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\The_Dark_Knight.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Assets\Movies\The_Dark_Knight.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="The_Departed" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\The_Departed.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Assets\Movies\The_Departed.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="The_Exorcist" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\The_Exorcist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Assets\Movies\The_Exorcist.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="the_godfather" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\the_godfather.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Assets\Movies\the_godfather.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="The_Godfather_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\The_Godfather_2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Assets\Movies\The_Godfather_2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="The_Green_Mile" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\The_Green_Mile.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Assets\Movies\The_Green_Mile.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="The_Lion_King" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\The_Lion_King.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Assets\Movies\The_Lion_King.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="The_Lord_of_the_Rings" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\The_Lord_of_the_Rings.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Assets\Movies\The_Lord_of_the_Rings.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="The_Shawshank_Redemption" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\The_Shawshank_Redemption.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Assets\Movies\The_Shawshank_Redemption.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="The_Silence_of_the_Lambs" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\The_Silence_of_the_Lambs.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Assets\Movies\The_Silence_of_the_Lambs.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="The_Social_Network" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Assets\The_Social_Network.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>..\Assets\Movies\The_Social_Network.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tim_robbins" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Actors\tim robbins.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Tom_Hanks" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Actors\Tom Hanks.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Uma_Thurman" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Actors\Uma Thurman.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="viggo_mortensen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Actors\viggo mortensen.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Vivien_Leigh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Assets\Actors\Vivien Leigh.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
