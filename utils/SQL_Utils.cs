@@ -1,4 +1,5 @@
-﻿using Movie_Database.Models;
+﻿using Movie_Database.Forms;
+using Movie_Database.Models;
 using Movie_Database.utils;
 using System;
 using System.Collections.Generic;
@@ -7,6 +8,7 @@ using System.Data.Common;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Net.Http.Headers;
+using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -157,6 +159,88 @@ namespace Movie_Database
             }
 
             return actors;
+        }
+
+        public static List<actor> get_all_actors(bool filtered = false, string filter_string = "")
+        {
+            List<actor> actors = new List<actor>();
+            using(SqlConnection connection = new SqlConnection(connection_string))
+            {
+                string query = $"use Movie_Database select a.id, a.first_name, a.last_name, a.date_of_birth, a.place_of_birth, af.bio from actors as a left join actors_info as af on af.id = a.id";
+
+                if (filtered)
+                {
+                    if(filter_string == "name")
+                    {
+                        query += " order by a.first_name, a.last_name;";
+                    }
+                    else
+                    {
+                        query += $" order by a.{filter_string};";
+                    }
+                }
+                
+                SqlCommand command = new SqlCommand(query, connection);
+                connection.Open();
+
+                SqlDataReader reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    string name = string.Concat(reader["first_name"].ToString(), " ", reader["last_name"].ToString());
+
+                    if (actors.Any(x => string.Concat(x.First_name, " ", x.Last_name) == name)) continue;
+
+                    actors.Add(
+                            new actor(
+                                    int.Parse(reader["id"].ToString()),
+                                    name,
+                                    reader["date_of_birth"].ToString(),
+                                    reader["place_of_birth"].ToString(),
+                                    reader["bio"].ToString()
+                                )
+                        );
+                }
+            }
+
+            return actors;
+        }
+
+        public static List<Movie> get_movies_actor_plays_in(string name)
+        {
+            List<Movie> movies = new List<Movie>();
+
+            using(SqlConnection connection = new SqlConnection(connection_string))
+            {
+                var all_actors = SQL_Utils.get_all_actors();
+
+                var actor = all_actors.FirstOrDefault(x => Utils.compare_actors_names(string.Concat(x.First_name, " ", x.Last_name), name));
+
+                if (actor is null) return null;
+
+                string query = $"use Movie_Database select m.* from actors as a left join movies as m on m.id = a.movie_id Where first_name = '{actor.First_name}' and last_name = '{actor.Last_name}'";
+
+                SqlCommand command = new SqlCommand(query, connection);
+
+                connection.Open();
+                SqlDataReader reader = command.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    movies.Add(
+                            new Movie(
+                                int.Parse(reader["id"].ToString()),
+                                reader["title"].ToString(),
+                                reader["director"].ToString(),
+                                reader["year_of_release"].ToString(),
+                                reader["genre"].ToString(),
+                                reader["summary"].ToString()
+                                )
+                        );
+                }
+            }
+
+            return movies;
         }
     }
 }
