@@ -51,8 +51,9 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(129, 26);
+            this.label3.Location = new System.Drawing.Point(129, 38);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(261, 25);
             this.label3.TabIndex = 5;
@@ -83,6 +84,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.Location = new System.Drawing.Point(240, 72);
             this.label1.Name = "label1";
@@ -93,6 +95,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.Location = new System.Drawing.Point(88, 167);
             this.label2.Name = "label2";
@@ -115,6 +118,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Movie_Database.Properties.Resources.backgroundMain2;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(532, 414);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
@@ -123,6 +128,7 @@
             this.Controls.Add(this.button4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button2);
+            this.DoubleBuffered = true;
             this.Name = "Main_Form";
             this.Text = "MainForm";
             this.Load += new System.EventHandler(this.MainForm_Load);

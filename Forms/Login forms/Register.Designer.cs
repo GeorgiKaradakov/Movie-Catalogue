@@ -48,6 +48,8 @@
             // passwordlbl
             // 
             this.passwordlbl.AutoSize = true;
+            this.passwordlbl.BackColor = System.Drawing.Color.Transparent;
+            this.passwordlbl.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.passwordlbl.Location = new System.Drawing.Point(341, 267);
             this.passwordlbl.Name = "passwordlbl";
             this.passwordlbl.Size = new System.Drawing.Size(56, 13);
@@ -57,7 +59,9 @@
             // usrnamelbl
             // 
             this.usrnamelbl.AutoSize = true;
-            this.usrnamelbl.Location = new System.Drawing.Point(341, 175);
+            this.usrnamelbl.BackColor = System.Drawing.Color.Transparent;
+            this.usrnamelbl.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.usrnamelbl.Location = new System.Drawing.Point(336, 178);
             this.usrnamelbl.Name = "usrnamelbl";
             this.usrnamelbl.Size = new System.Drawing.Size(58, 13);
             this.usrnamelbl.TabIndex = 6;
@@ -97,7 +101,9 @@
             // confirmPasslbl
             // 
             this.confirmPasslbl.AutoSize = true;
-            this.confirmPasslbl.Location = new System.Drawing.Point(323, 338);
+            this.confirmPasslbl.BackColor = System.Drawing.Color.Transparent;
+            this.confirmPasslbl.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.confirmPasslbl.Location = new System.Drawing.Point(316, 336);
             this.confirmPasslbl.Name = "confirmPasslbl";
             this.confirmPasslbl.Size = new System.Drawing.Size(93, 13);
             this.confirmPasslbl.TabIndex = 10;
@@ -113,7 +119,9 @@
             // emaillbl
             // 
             this.emaillbl.AutoSize = true;
-            this.emaillbl.Location = new System.Drawing.Point(341, 86);
+            this.emaillbl.BackColor = System.Drawing.Color.Transparent;
+            this.emaillbl.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.emaillbl.Location = new System.Drawing.Point(344, 91);
             this.emaillbl.Name = "emaillbl";
             this.emaillbl.Size = new System.Drawing.Size(38, 13);
             this.emaillbl.TabIndex = 12;
@@ -156,6 +164,8 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.Location = new System.Drawing.Point(104, 42);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(57, 13);
@@ -165,6 +175,8 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label2.Location = new System.Drawing.Point(398, 42);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(58, 13);
@@ -175,6 +187,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Movie_Database.Properties.Resources.loginBackground;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);

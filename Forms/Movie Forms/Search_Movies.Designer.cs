@@ -38,8 +38,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Black;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(289, 56);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(278, 56);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(161, 24);
             this.label1.TabIndex = 0;
@@ -90,12 +92,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Movie_Database.Properties.Resources.moviesBackground1;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(745, 386);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.title_txt);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
+            this.DoubleBuffered = true;
             this.Name = "Search_Movies";
             this.Text = "Search_Movies";
             this.ResumeLayout(false);

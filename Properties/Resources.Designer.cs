@@ -123,6 +123,36 @@ namespace Movie_Database.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap backgroundMain {
+            get {
+                object obj = ResourceManager.GetObject("backgroundMain", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap backgroundMain1 {
+            get {
+                object obj = ResourceManager.GetObject("backgroundMain1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap backgroundMain2 {
+            get {
+                object obj = ResourceManager.GetObject("backgroundMain2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Bob_Gunton {
             get {
                 object obj = ResourceManager.GetObject("Bob_Gunton", resourceCulture);
@@ -156,6 +186,16 @@ namespace Movie_Database.Properties {
         internal static System.Drawing.Bitmap Carrie_Fisher {
             get {
                 object obj = ResourceManager.GetObject("Carrie_Fisher", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cast {
+            get {
+                object obj = ResourceManager.GetObject("cast", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -493,6 +533,16 @@ namespace Movie_Database.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap loginBackground {
+            get {
+                object obj = ResourceManager.GetObject("loginBackground", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Mark_Hamill {
             get {
                 object obj = ResourceManager.GetObject("Mark_Hamill", resourceCulture);
@@ -566,6 +616,26 @@ namespace Movie_Database.Properties {
         internal static System.Drawing.Bitmap Morgan_Freeman {
             get {
                 object obj = ResourceManager.GetObject("Morgan_Freeman", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap moviesBackground {
+            get {
+                object obj = ResourceManager.GetObject("moviesBackground", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap moviesBackground1 {
+            get {
+                object obj = ResourceManager.GetObject("moviesBackground1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

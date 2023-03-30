@@ -38,14 +38,14 @@
             // 
             // usernameLog
             // 
-            this.usernameLog.Location = new System.Drawing.Point(219, 60);
+            this.usernameLog.Location = new System.Drawing.Point(263, 90);
             this.usernameLog.Name = "usernameLog";
             this.usernameLog.Size = new System.Drawing.Size(252, 20);
             this.usernameLog.TabIndex = 0;
             // 
             // passwordLog
             // 
-            this.passwordLog.Location = new System.Drawing.Point(219, 133);
+            this.passwordLog.Location = new System.Drawing.Point(263, 163);
             this.passwordLog.Name = "passwordLog";
             this.passwordLog.Size = new System.Drawing.Size(252, 20);
             this.passwordLog.TabIndex = 1;
@@ -53,24 +53,31 @@
             // usrnameloginlbl
             // 
             this.usrnameloginlbl.AutoSize = true;
-            this.usrnameloginlbl.Location = new System.Drawing.Point(308, 35);
+            this.usrnameloginlbl.BackColor = System.Drawing.Color.Transparent;
+            this.usrnameloginlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usrnameloginlbl.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.usrnameloginlbl.Location = new System.Drawing.Point(343, 59);
             this.usrnameloginlbl.Name = "usrnameloginlbl";
-            this.usrnameloginlbl.Size = new System.Drawing.Size(58, 13);
+            this.usrnameloginlbl.Size = new System.Drawing.Size(90, 18);
             this.usrnameloginlbl.TabIndex = 2;
             this.usrnameloginlbl.Text = "Username:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(308, 108);
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label2.Location = new System.Drawing.Point(343, 133);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 13);
+            this.label2.Size = new System.Drawing.Size(88, 18);
             this.label2.TabIndex = 3;
             this.label2.Text = "Password:";
             // 
             // loginButt
             // 
-            this.loginButt.Location = new System.Drawing.Point(302, 244);
+            this.loginButt.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.loginButt.Location = new System.Drawing.Point(346, 273);
             this.loginButt.Name = "loginButt";
             this.loginButt.Size = new System.Drawing.Size(75, 23);
             this.loginButt.TabIndex = 4;
@@ -81,8 +88,10 @@
             // reigster
             // 
             this.reigster.AutoSize = true;
+            this.reigster.BackColor = System.Drawing.Color.Transparent;
             this.reigster.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.reigster.Location = new System.Drawing.Point(193, 307);
+            this.reigster.ForeColor = System.Drawing.Color.White;
+            this.reigster.Location = new System.Drawing.Point(237, 337);
             this.reigster.Name = "reigster";
             this.reigster.Size = new System.Drawing.Size(300, 20);
             this.reigster.TabIndex = 6;
@@ -91,10 +100,13 @@
             this.reigster.MouseLeave += new System.EventHandler(this.MouseLeave_lbl);
             this.reigster.MouseHover += new System.EventHandler(this.Hover_lbl);
             // 
-            // Form1
+            // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImage = global::Movie_Database.Properties.Resources.loginBackground;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.reigster);
             this.Controls.Add(this.loginButt);
@@ -102,7 +114,7 @@
             this.Controls.Add(this.usrnameloginlbl);
             this.Controls.Add(this.passwordLog);
             this.Controls.Add(this.usernameLog);
-            this.Name = "Form1";
+            this.Name = "Login";
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();

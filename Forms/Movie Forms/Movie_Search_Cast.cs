@@ -1,13 +1,7 @@
 ﻿using Movie_Database.Models;
 using Movie_Database.utils;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Movie_Database.Forms
@@ -26,7 +20,7 @@ namespace Movie_Database.Forms
             string title = title_txt.Text;
             var actors = SQL_Utils.get_cast(title);
 
-            if(actors is null)
+            if (actors is null)
             {
                 MessageBox.Show("Cannot find movie make sure to put the right title!");
                 return;
@@ -42,7 +36,7 @@ namespace Movie_Database.Forms
             Label line = new Label(), line_prev = line;
 
             bool first = true;
-            foreach(var actor in actors)
+            foreach (var actor in actors)
             {
                 image = new PictureBox();
                 image.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -71,6 +65,8 @@ namespace Movie_Database.Forms
                     text.Location = new Point(image.Location.X + image.Width + 5, image.Location.Y + 10);
 
                 }
+                text.BackColor = Color.Black;
+                text.ForeColor = Color.White;
                 text.Text = actor.ToString();
 
                 line = new Label();
@@ -84,6 +80,7 @@ namespace Movie_Database.Forms
                 {
                     line.Location = new Point(image.Location.X, image.Location.Y + image.Height + 30);
                 }
+                line.BackColor = Color.Black;
                 line.Text = "------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------";
 
                 this.Controls.Add(image);
@@ -106,17 +103,18 @@ namespace Movie_Database.Forms
 
         private void reload_click(object sender, EventArgs e)
         {
-            for(int i = 0; i < this.Controls.Count; i++)
+            for (int i = 0; i < this.Controls.Count; i++)
             {
                 var control = this.Controls[i];
 
-                if (control.GetType().Name == "TextBox" || 
-                    control.GetType().Name == "Button" || 
-                    (control.GetType().Name == "Label")) { 
-                    if(control.GetType().Name == "Label")
+                if (control.GetType().Name == "TextBox" ||
+                    control.GetType().Name == "Button" ||
+                    (control.GetType().Name == "Label"))
+                {
+                    if (control.GetType().Name == "Label")
                     {
                         var lbl = control as Label;
-                        if(lbl.Tag != null && lbl.Tag.ToString() == "no_delete")
+                        if (lbl.Tag != null && lbl.Tag.ToString() == "no_delete")
                         {
                             continue;
                         }

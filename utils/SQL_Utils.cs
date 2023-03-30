@@ -1,24 +1,16 @@
-﻿using Movie_Database.Forms;
-using Movie_Database.Models;
+﻿using Movie_Database.Models;
 using Movie_Database.utils;
-using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.Common;
 using System.Data.SqlClient;
 using System.Linq;
-using System.Net.Http.Headers;
-using System.Runtime.Remoting.Messaging;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace Movie_Database
 {
     public static class SQL_Utils
     {
-        public static string connection_string = @"Data Source=DESKTOP-TC70G50;Initial Catalog=Movie_Database;Integrated Security=True";
-        
+        public static string connection_string = @"Data Source=DESKTOP-VTP6V01;Initial Catalog=Movie_Database;Integrated Security=True";
+
         public static void insert_into_table(string insert_query)
         {
             using (SqlConnection connection = new SqlConnection(connection_string))
@@ -37,7 +29,7 @@ namespace Movie_Database
             {
                 using (SqlDataAdapter sda = new SqlDataAdapter($"SELECT username, password FROM users WHERE username = '{username}' AND password = '{password}';", connection))
                 {
-                    DataTable dt = new DataTable(); 
+                    DataTable dt = new DataTable();
                     sda.Fill(dt);
 
                     return dt.Rows.Count > 0;
@@ -76,7 +68,7 @@ namespace Movie_Database
         {
             List<Movie> movies = new List<Movie>();
 
-            using(SqlConnection connection = new SqlConnection(connection_string))
+            using (SqlConnection connection = new SqlConnection(connection_string))
             {
                 string query = "SELECT * FROM movies";
 
@@ -90,7 +82,8 @@ namespace Movie_Database
 
                 SqlDataReader reader = command.ExecuteReader();
 
-                while(reader.Read()) {
+                while (reader.Read())
+                {
                     movies.Add(new Movie(
                             int.Parse(reader["id"].ToString()),
                             reader["title"].ToString(),
@@ -109,7 +102,7 @@ namespace Movie_Database
         {
             List<string> actors_names = new List<string>();
 
-            using(SqlConnection connection = new SqlConnection(connection_string))
+            using (SqlConnection connection = new SqlConnection(connection_string))
             {
                 string query = $"SELECT a.first_name, a.last_name FROM actors AS a WHERE a.movie_id = {movie_id};";
 
@@ -117,7 +110,7 @@ namespace Movie_Database
                 connection.Open();
                 SqlDataReader reader = command.ExecuteReader();
 
-                while(reader.Read())
+                while (reader.Read())
                 {
                     actors_names.Add(
                             string.Concat(reader["first_name"].ToString(), " ", reader["last_name"].ToString())
@@ -130,22 +123,23 @@ namespace Movie_Database
 
         public static List<actor> get_cast(string title)
         {
-            if(!Data_Container.movies.Any(x => Utils.compare_movies_names(x.Title, title)))
+            if (!Data_Container.movies.Any(x => Utils.compare_movies_names(x.Title, title)))
             {
                 return null;
             }
 
             List<actor> actors = new List<actor>();
 
-            using(SqlConnection connection = new SqlConnection(connection_string))
+            using (SqlConnection connection = new SqlConnection(connection_string))
             {
-                string query = $"SELECT a.id, ai.name, ai.birthdate, a.place_of_birth, ai.bio FROM movies as m left join actors as a on m.id = a.movie_id left join actors_info as ai on ai.id = a.id where m.title = '{title}';"; 
+                string query = $"SELECT a.id, ai.name, ai.birthdate, a.place_of_birth, ai.bio FROM movies as m left join actors as a on m.id = a.movie_id left join actors_info as ai on ai.id = a.id where m.title = '{title}';";
                 connection.Open();
-                SqlCommand command = new SqlCommand (query, connection);
+                SqlCommand command = new SqlCommand(query, connection);
 
                 SqlDataReader reader = command.ExecuteReader();
 
-                while(reader.Read()) {
+                while (reader.Read())
+                {
                     actors.Add(
                             new actor(
                                 int.Parse(reader["id"].ToString()),
@@ -164,13 +158,13 @@ namespace Movie_Database
         public static List<actor> get_all_actors(bool filtered = false, string filter_string = "")
         {
             List<actor> actors = new List<actor>();
-            using(SqlConnection connection = new SqlConnection(connection_string))
+            using (SqlConnection connection = new SqlConnection(connection_string))
             {
                 string query = $"use Movie_Database select a.id, a.first_name, a.last_name, a.date_of_birth, a.place_of_birth, af.bio from actors as a left join actors_info as af on af.id = a.id";
 
                 if (filtered)
                 {
-                    if(filter_string == "name")
+                    if (filter_string == "name")
                     {
                         query += " order by a.first_name, a.last_name;";
                     }
@@ -179,7 +173,7 @@ namespace Movie_Database
                         query += $" order by a.{filter_string};";
                     }
                 }
-                
+
                 SqlCommand command = new SqlCommand(query, connection);
                 connection.Open();
 
@@ -210,7 +204,7 @@ namespace Movie_Database
         {
             List<Movie> movies = new List<Movie>();
 
-            using(SqlConnection connection = new SqlConnection(connection_string))
+            using (SqlConnection connection = new SqlConnection(connection_string))
             {
                 var all_actors = SQL_Utils.get_all_actors();
 

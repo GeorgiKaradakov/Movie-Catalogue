@@ -1,13 +1,8 @@
 ﻿using Movie_Database.Models;
 using Movie_Database.utils;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Movie_Database.Forms
@@ -36,7 +31,7 @@ namespace Movie_Database.Forms
 
             var movie = find_movie(title);
 
-            if(movie is null)
+            if (movie is null)
             {
                 MessageBox.Show($"Cannot find movie with title = {title}!\nPlease make sure that you typed it correctly.");
                 return;
@@ -54,6 +49,8 @@ namespace Movie_Database.Forms
             text.AutoSize = false;
             text.Size = new Size(567, 235);
             text.Location = new Point(233, 69);
+            text.BackColor = Color.Black;
+            text.ForeColor = Color.White;
 
             string movie_resume = movie.ToString();
             movie_resume += $"\n\nCast: {string.Join(", ", SQL_Utils.get_actors_names(movie.Id))}";
@@ -79,7 +76,7 @@ namespace Movie_Database.Forms
 
         private void Reload_search(object sender, EventArgs e)
         {
-            if(poster is null || text is null) return;
+            if (poster is null || text is null) return;
 
             title_txt.Visible = true;
             label1.Visible = true;

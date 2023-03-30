@@ -411,5 +411,26 @@
   <ItemGroup>
     <None Include="Assets\Actors\Vivien Leigh.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loginBackground.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cast.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\moviesBackground.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\moviesBackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgroundMain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgroundMain1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgroundMain2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -2,12 +2,8 @@
 using Movie_Database.utils;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Movie_Database.Forms.Actor_Forms
@@ -18,7 +14,7 @@ namespace Movie_Database.Forms.Actor_Forms
 
         private PictureBox image = new PictureBox();
         private Label text = new Label();
-        private Label line = new Label();   
+        private Label line = new Label();
 
         public All_Actors_Show()
         {
@@ -61,10 +57,10 @@ namespace Movie_Database.Forms.Actor_Forms
         {
             image = new PictureBox();
             PictureBox image_prev = image;
-            
+
             text = new Label();
             Label text_prev = text;
-            
+
             line = new Label();
             Label line_prev = line;
 
@@ -144,6 +140,11 @@ namespace Movie_Database.Forms.Actor_Forms
         {
             this.Close();
             this.ParentForm.Show();
+        }
+
+        private void filter_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

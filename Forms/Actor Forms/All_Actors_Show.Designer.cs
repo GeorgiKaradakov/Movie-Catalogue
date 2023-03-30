@@ -45,6 +45,7 @@
             this.filter.Size = new System.Drawing.Size(121, 28);
             this.filter.TabIndex = 0;
             this.filter.Text = "filter by";
+            this.filter.SelectedIndexChanged += new System.EventHandler(this.filter_SelectedIndexChanged);
             this.filter.TextChanged += new System.EventHandler(this.filter_changed);
             // 
             // All_Actors_Show
