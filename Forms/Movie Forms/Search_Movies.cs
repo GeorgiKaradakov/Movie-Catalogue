@@ -85,7 +85,6 @@ namespace Movie_Database.Forms
             this.Controls.Remove(poster);
             this.Controls.Remove(text);
 
-            title_txt.TabIndex = 0;
             title_txt.Focus();
             title_txt.SelectAll();
         }

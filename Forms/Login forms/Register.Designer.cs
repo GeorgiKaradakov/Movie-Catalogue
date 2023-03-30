@@ -71,6 +71,7 @@
             // 
             this.passwordReg.Location = new System.Drawing.Point(264, 292);
             this.passwordReg.Name = "passwordReg";
+            this.passwordReg.PasswordChar = '*';
             this.passwordReg.Size = new System.Drawing.Size(215, 20);
             this.passwordReg.TabIndex = 5;
             // 
@@ -95,6 +96,7 @@
             // 
             this.confirmPassReg.Location = new System.Drawing.Point(264, 364);
             this.confirmPassReg.Name = "confirmPassReg";
+            this.confirmPassReg.PasswordChar = '*';
             this.confirmPassReg.Size = new System.Drawing.Size(215, 20);
             this.confirmPassReg.TabIndex = 9;
             // 

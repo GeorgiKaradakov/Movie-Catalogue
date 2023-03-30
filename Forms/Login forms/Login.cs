@@ -18,7 +18,7 @@ namespace Movie_Database
         private void reigster_Click(object sender, EventArgs e)
         {
             Register reg_form = new Register();
-            reg_form.StartPosition = FormStartPosition.CenterParent;
+            reg_form.StartPosition = FormStartPosition.CenterScreen;
             reg_form.ParentForm = this;
             reg_form.Show();
             this.Hide();

@@ -623,16 +623,6 @@ namespace Movie_Database.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap moviesBackground {
-            get {
-                object obj = ResourceManager.GetObject("moviesBackground", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap moviesBackground1 {
             get {
                 object obj = ResourceManager.GetObject("moviesBackground1", resourceCulture);

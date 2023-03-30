@@ -9,7 +9,7 @@ namespace Movie_Database
 {
     public static class SQL_Utils
     {
-        public static string connection_string = @"Data Source=DESKTOP-VTP6V01;Initial Catalog=Movie_Database;Integrated Security=True";
+        public static string connection_string = @"Data Source=DESKTOP-TC70G50;Initial Catalog=Movie_Database;Integrated Security=True";
 
         public static void insert_into_table(string insert_query)
         {

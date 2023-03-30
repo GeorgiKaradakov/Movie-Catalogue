@@ -60,6 +60,8 @@ namespace Movie_Database.Forms.Actor_Forms
 
             string actor_resume = actor.ToString();
 
+            text.BackColor = Color.Black;
+            text.ForeColor = Color.White;
             text.Text = actor_resume;
 
             this.Controls.Add(image);
@@ -78,6 +80,9 @@ namespace Movie_Database.Forms.Actor_Forms
             title_txt.Visible = true;
             label1.Visible = true;
             button1.Visible = true;
+
+            title_txt.Focus();
+            title_txt.SelectAll();
         }
 
         private actor find_actor(string name)

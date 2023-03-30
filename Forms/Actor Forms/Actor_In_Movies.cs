@@ -22,6 +22,7 @@ namespace Movie_Database.Forms.Actor_Forms
 
         private void search_click(object sender, EventArgs e)
         {
+            this.BackgroundImage = null;
             string name = name_txt.Text;
             var movies = SQL_Utils.get_movies_actor_plays_in(name);
 
@@ -110,10 +111,14 @@ namespace Movie_Database.Forms.Actor_Forms
                 }
             }
 
+            this.BackgroundImage = Properties.Resources.cast;
             button1.Visible = true;
             button2.Visible = true;
             name_txt.Visible = true;
             label2.Visible = true;
+
+            name_txt.Focus();
+            name_txt.SelectAll();
         }
     }
 }

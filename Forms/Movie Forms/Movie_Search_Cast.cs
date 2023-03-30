@@ -17,6 +17,7 @@ namespace Movie_Database.Forms
 
         private void search_click(object sender, EventArgs e)
         {
+            this.BackgroundImage = null;
             string title = title_txt.Text;
             var actors = SQL_Utils.get_cast(title);
 
@@ -65,8 +66,6 @@ namespace Movie_Database.Forms
                     text.Location = new Point(image.Location.X + image.Width + 5, image.Location.Y + 10);
 
                 }
-                text.BackColor = Color.Black;
-                text.ForeColor = Color.White;
                 text.Text = actor.ToString();
 
                 line = new Label();
@@ -80,7 +79,6 @@ namespace Movie_Database.Forms
                 {
                     line.Location = new Point(image.Location.X, image.Location.Y + image.Height + 30);
                 }
-                line.BackColor = Color.Black;
                 line.Text = "------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------";
 
                 this.Controls.Add(image);
@@ -129,6 +127,7 @@ namespace Movie_Database.Forms
                 i--;
             }
 
+            this.BackgroundImage = Properties.Resources.moviesBackground1;
             title_txt.Visible = true;
             label1.Visible = true;
             button1.Visible = true;

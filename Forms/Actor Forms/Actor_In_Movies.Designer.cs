@@ -96,7 +96,7 @@
             this.AutoScroll = true;
             this.BackgroundImage = global::Movie_Database.Properties.Resources.cast;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(779, 386);
+            this.ClientSize = new System.Drawing.Size(810, 386);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.name_txt);

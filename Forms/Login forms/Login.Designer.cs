@@ -47,6 +47,7 @@
             // 
             this.passwordLog.Location = new System.Drawing.Point(263, 163);
             this.passwordLog.Name = "passwordLog";
+            this.passwordLog.PasswordChar = '*';
             this.passwordLog.Size = new System.Drawing.Size(252, 20);
             this.passwordLog.TabIndex = 1;
             // 
