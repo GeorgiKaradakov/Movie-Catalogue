@@ -58,7 +58,7 @@ INSERT INTO actors_info (id, name, birthdate, nationality, bio)
 VALUES (16, 'Elijah Wood', '1981-01-28', 'American', 'Elijah Wood is an American actor and producer known for his role as Frodo Baggins in "The Lord of the Rings" trilogy (2001-2003).');
 
 INSERT INTO actors_info (id, name, birthdate, nationality, bio)
-VALUES (17, 'Ian McKellen', '1939-05-25', 'British', 'Ian McKellen is a British actor known for his roles in "The Lord of the Rings" trilogy (2001-2003), "X-Men" (2000-2014), and "The Hobbit" trilogy (2012-2014).');
+VALUES (17, 'Ian McKellen', '1939-05-25', 'British', 'Ian McKellen is a British actor known for his roles in "The Lord of the Rings" trilogy (2001-2003), "X-Men" (2000-2014), and "The Hobbit" trilogy (2012-2014). Best known with his phrase "You shaw not PASSS!".');
 
 INSERT INTO actors_info (id, name, birthdate, nationality, bio)
 VALUES (18, 'Viggo Mortensen', '1958-10-20', 'American', 'Viggo Mortensen is a Danish-American actor known for his roles in "The Lord of the Rings" trilogy (2001-2003), "Eastern Promises" (2007), and "Green Book" (2018).');
